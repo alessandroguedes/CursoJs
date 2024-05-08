@@ -1,0 +1,37 @@
+Variáveis - jAVASCRIPT 
+    - podem começar com letra, $ ou _
+    - Não podem começar com números
+    - É possivel usar letras ou números
+    - É possível usar acentos e símbolos
+    - Não pode conter espaços
+    - Não podem ser palavras reservadas 
+
+    
+    Maiusculas e minusculas fazem diferença
+    Tente escolher nomes coerentes para as variáveis
+
+    Tipos de dados
+        -- number (Infinity, NaN) 
+        -- string
+        -- boolean
+        - null
+        - undefined
+        - object
+            array
+        - function
+
+        (number + number) serve para adição
+        (string + string) serve para concatenação
+        - prompt -> sempre retorna uma string
+
+Tratamento de dados
+    - Converter String para Numero -> number(n) ou Number.parserInt(n) ou Number.parserFloat(n)
+    - Converter Numero para String -> string(n) ou n.toString()
+
+    Template string
+        `Eu estou aprendendo ${}`
+
+    n = 1545.5
+    Converter para Real (R$)
+    n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    Resultado R$ 1,545.50

@@ -7,8 +7,12 @@
     <style>
         #resultado {
             width: 200px;
-            height: 20px;
-            background-color: aqua;
+            height: 25px;
+            background-color: lightgray;
+            box-shadow: 2px 2px 2px black;
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
         }
         input {
             margin-bottom: 20px;
@@ -25,14 +29,14 @@
     </div>
     <script>
         function somar() {
-           var n1 = window.document.getElementById('t1');
-           var n2 = window.document.getElementById('t2');
+           var n1 = window.document.getElementById('t1').value;
+           var n2 = window.document.getElementById('t2').value;
+           var res = window.document.getElementById('resultado');
            //converter string para numeros
-           var n1 = Number(n1.value);
-           var n2 = Number(n2.value);
-           var  res = window.document.getElementById('resultado');
+           var n1 = Number(n1);
+           var n2 = Number(n2);
            var soma = n1 + n2;
-           res.innerHTML = `A soma de ${n1} e ${n2} é igual a ${soma}`;
+           res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${soma}`;
         }
     </script>
 </body>

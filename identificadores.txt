@@ -35,3 +35,52 @@ Tratamento de dados
     Converter para Real (R$)
     n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
     Resultado R$ 1,545.50
+
+Operadores
+    Se não tem nenhum comando errado -> está certo sintaticamente
+    ordem de precedência dos
+    Aritméticos: 
+        () -> parenteses
+        ** -> potencia
+        * / % -> multiplicacao, divisaõ e resto 
+        + - -> adição e subtração
+    incremento
+        x = x + 1 -> x += 1 ou x++
+        x = x - 1 -> x -= 1 ou x--
+    
+    Relacionais
+        >  -> maior
+        <  -> menor
+        >= -> maior ou igual 
+        <= -> menor ou igual
+        == -> igual
+        != -> diferente
+    identidade
+        5 == 5    -> true
+        5 == '5'  -> true
+        5 === '5' -> false
+        5 === 5   -> true
+    Lógicos
+        !  -> negação
+        && -> conjunção
+        || -> disjunção
+    precedência
+        () ** / ...
+        > < >=  ...
+        !
+        &&
+        ||
+    Ternário
+        ? :
+        teste ? true : false
+        media>=7 ? "Aprovado" : "Reprovado" 
+    
+    Métodos de acesso ao DOM
+        por Marca
+        por ID
+        por Nome
+        por Classe
+        por Seletor
+
+    Event Reference (pesquisar no Google)   
+        eventos possiveis 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<style>
+    body {
+        background: lightblue;
+        font: normal 18pt arial;
+        color: white;
+    }
+</style>
+<body>
+    <h1>Iniciando os estudos com o DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> com JavaScript </p>
+    <div id="msg">clique em mim</div>
+    ------- <br> 
+    <script>
+        //trocar a cor de fundo
+        var corpo = window.document.body
+        corpo.style.background = 'blue'
+        //Método por Marca
+        var p1 = window.document.getElementsByTagName('p')[0]
+        //escrever na tela um texto (innerText)
+        window.document.write(p1.innerText)
+        //trocar a cor do texto
+       
+        p1.style.color = 'black'
+        //trocar o texto
+         //p1.innerText = 'Troquei o texto do primeiro parágrafo'
+        
+    </script>
+</body>
+</html>

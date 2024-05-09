@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de dois Numeros</title>
+    <style>
+        #resultado {
+            width: 200px;
+            height: 20px;
+            background-color: aqua;
+        }
+        input {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somar dois números</h1>
+    <input type="number" name="" id="t1">
+    <input type="number" name="" id="t2">
+    <input type="button" value="Somar" id="" onclick="somar()">
+    <div id="resultado">
+
+    </div>
+    <script>
+        function somar() {
+           var n1 = window.document.getElementById('t1');
+           var n2 = window.document.getElementById('t2');
+           //converter string para numeros
+           var n1 = Number(n1.value);
+           var n2 = Number(n2.value);
+           var  res = window.document.getElementById('resultado');
+           var soma = n1 + n2;
+           res.innerHTML = `A soma de ${n1} e ${n2} é igual a ${soma}`;
+        }
+    </script>
+</body>
+</html>

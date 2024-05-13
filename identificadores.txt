@@ -87,3 +87,6 @@ Operadores
     
     Site para imagens grátis
     www.pexels.com
+
+    OBS
+    TODO array em jAVASCRIPT é um object

@@ -59,4 +59,12 @@
         res.innerHTML += `<p>A média é ${media} </p>`
         
     }
+
+    document.body.onload = adicionarElemento;
+
+        function adicionarElemento() {
+        let criar_elemento = document.createElement('div')
+        let conteudo_na_div = document.createTextNode('Inserindo texto')
+        criar_elemento.append(conteudo_na_div)
+    }
  }
